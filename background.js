@@ -1,7 +1,6 @@
 // background.js
-// Author:
-// Author URI: https://
-// Author Github URI: https://www.github.com/
-// Project Repository URI: https://github.com/
-// Description: Handles all the browser level activities (e.g. tab management, etc.)
+// Author: Rahul Paul
+// Author GitHub URI: https://github.com/rahulpaul-07
+// Project Repository URI: https://github.com/rahulpaul-07/Chrome-Extension-Problem-Tracker
+// Description: Handles browser-level activities (e.g., tab management, storage sync)
 // License: MIT
