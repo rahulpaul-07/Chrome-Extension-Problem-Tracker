@@ -1,7 +1,7 @@
 # CP Problem Tracker 🚀
 
 ## Description
-A custom Google Chrome extension designed to help students and developers bookmark and manage coding problems from platforms like Maang.in. This tool helps users organize their competitive programming practice by saving important problems for later review.
+A custom Google Chrome extension designed to help students and developers bookmark and manage coding problems from platforms like Maang.in and Leetcode. This tool helps users organize their competitive programming practice by saving important problems for later review.
 
 ## ✨ Features
 * **Bookmark Problems:** Save coding problems with a single click while browsing.
