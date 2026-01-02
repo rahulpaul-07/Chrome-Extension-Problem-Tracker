@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "AZ Problem Tracker",
   "version": "0.1",
-  "author": "Lakshya Mittal",
-  "description": "A Chrome Extension that helps us track problems on AZ",
+  "author": "Rahul Paul",
+  "description": "A Chrome extension to bookmark and track problems on the MAANG interview prep platform.",
   "permissions": [
     "storage",
     "tabs"
