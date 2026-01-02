@@ -1,22 +1,41 @@
-# Problem Tracker Chrome Extension 🚀
-
-## Description
-A custom Google Chrome extension designed to help students and developers bookmark and manage coding problems from platforms like Maang.in. This tool helps users organize their competitive programming practice by saving important problems for later review.
+# Chrome-Extension-Base-Template
+This is a basic Chrome Extension base template for starting new projects off of initialized with a MIT license.
 
 ## Features
-* **Bookmark Problems:** Save problems with a single click.
-* **Manage List:** View and delete bookmarked problems easily via the popup interface.
-* **Persistent Storage:** Uses the Chrome Storage API to save data even after the browser closes.
+- ..
+- ..
+- ..
 
-## Tech Stack
-* **Frontend:** HTML, CSS, JavaScript
-* **Core:** Manifest V3, Chrome Storage API, DOM Manipulation
+## Author
+First Last
+- [Author Website]()
+- [Author Github]()
+- [Project Repository]()
 
-## Installation
-1.  Clone this repository.
-2.  Open Chrome and go to `chrome://extensions/`.
-3.  Enable **Developer Mode**.
-4.  Click **Load unpacked** and select the folder containing this code.
+## Requirements
+### Knowledge
+- HTML
+- CSS
+- Javascript
+- Chrome API
+### Tools
+- Google Chrome Browser
+- IDE or Text Editor of Your Choice
 
-## Created By
-**Rahul Paul** - [My GitHub Profile](https://github.com/rahulpaul-07)
+## Setup Instructions
+### For Developers
+1. Make a clone of this project, unzipped.
+2. Open Chrome Browser
+3. In a new or blank tab, type in "chrome://extensions/" (without the quotes of course) and click [Enter].
+4. At the top right corner of the page, **enable** "Developer Mode"
+5. Click the button on the page that says "Load Unpacked"
+6. Navigate to your unzipped project folder and select that and hit OK.
+7. You are now ready to start working on the extension! Just make sure you reload after each change you make to see the changes take place.
+
+### For End Users
+1. ...
+2. ...
+3. ...
+
+## License
+Please refer to LICENSE file.
