@@ -1,41 +1,36 @@
-# Chrome-Extension-Base-Template
-This is a basic Chrome Extension base template for starting new projects off of initialized with a MIT license.
+# CP Problem Tracker 🚀
 
-## Features
-- ..
-- ..
-- ..
+## Description
+A custom Google Chrome extension designed to help students and developers bookmark and manage coding problems from platforms like Maang.in. This tool helps users organize their competitive programming practice by saving important problems for later review.
 
-## Author
-First Last
-- [Author Website]()
-- [Author Github]()
-- [Project Repository]()
+## ✨ Features
+* **Bookmark Problems:** Save coding problems with a single click while browsing.
+* **Manage Bookmarks:** View a list of all saved problems in a clean popup interface.
+* **Delete & Organize:** Easily remove problems once you have solved them.
+* **Persistent Storage:** Uses the **Chrome Storage API** to ensure your data is saved even if you close the browser.
 
-## Requirements
-### Knowledge
-- HTML
-- CSS
-- Javascript
-- Chrome API
-### Tools
-- Google Chrome Browser
-- IDE or Text Editor of Your Choice
+## 🛠️ Tech Stack
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Core:** Chrome Manifest V3, DOM Manipulation
+* **Storage:** Chrome Local Storage API
 
-## Setup Instructions
-### For Developers
-1. Make a clone of this project, unzipped.
-2. Open Chrome Browser
-3. In a new or blank tab, type in "chrome://extensions/" (without the quotes of course) and click [Enter].
-4. At the top right corner of the page, **enable** "Developer Mode"
-5. Click the button on the page that says "Load Unpacked"
-6. Navigate to your unzipped project folder and select that and hit OK.
-7. You are now ready to start working on the extension! Just make sure you reload after each change you make to see the changes take place.
+## ⚙️ Installation & Setup
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/rahulpaul-07/Chrome-Extension-Problem-Tracker.git](https://github.com/rahulpaul-07/Chrome-Extension-Problem-Tracker.git)
+    ```
+2.  **Open Chrome Extensions:**
+    * Open Google Chrome and type `chrome://extensions/` in the address bar.
+3.  **Enable Developer Mode:**
+    * Toggle the switch in the top-right corner to **ON**.
+4.  **Load the Extension:**
+    * Click the **Load unpacked** button.
+    * Select the folder `chrome-ext-problem-tracker-main` from this repository.
+5.  **Pin & Use:**
+    * Pin the extension to your toolbar and start bookmarking!
 
-### For End Users
-1. ...
-2. ...
-3. ...
-
-## License
-Please refer to LICENSE file.
+## 👨‍💻 Author
+**Rahul Paul**
+* [GitHub Profile](https://github.com/rahulpaul-07)
+* [LinkedIn](https://www.linkedin.com/in/rahulpaul-07/) ## 📄 License
+This project is licensed under the MIT License.
