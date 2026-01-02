@@ -32,6 +32,7 @@ A custom Google Chrome extension designed to help students and developers bookma
 ## 👨‍💻 Author
 **Rahul Paul**
 * [GitHub Profile](https://github.com/rahulpaul-07)
-* [LinkedIn](www.linkedin.com/in/rahul-paul-554225251/) 
+* [LinkedIn Profile](https://www.linkedin.com/in/rahul-paul-554225251/)
+
 ## 📄 License
 This project is licensed under the MIT License.
