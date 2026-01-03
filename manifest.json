@@ -1,12 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "AZ Problem Tracker",
-  "version": "0.1",
+  "name": "CP Problem Tracker",
+  "version": "1.0",
   "author": "Rahul Paul",
   "description": "A Chrome extension to bookmark and track problems on the MAANG interview prep platform.",
   "permissions": [
     "storage",
     "tabs"
+  ],
+  "host_permissions": [
+    "https://maang.in/*"
   ],
   "content_scripts": [
     {
@@ -21,14 +24,14 @@
   "background": {
     "service_worker": "background.js"
   },
-  "web_accessible_resources" : [
+  "web_accessible_resources": [
     {
       "resources": [
         "assets/bookmark.png",
         "assets/delete.png",
         "assets/play.png"
       ],
-      "matches" : ["<all_urls>"]
+      "matches": ["https://maang.in/*"]
     }
   ],
   "action": {
@@ -38,6 +41,6 @@
       "32": "assets/ext-icon.png"
     },
     "default_popup": "popup.html",
-    "default_title": "AZ Problem Tracker"
+    "default_title": "CP Problem Tracker"
   }
 }

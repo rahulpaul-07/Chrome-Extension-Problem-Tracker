@@ -1,3 +1,4 @@
+// content.js
 const bookmarkImgURL = chrome.runtime.getURL("assets/bookmark.png");
 const AZ_PROBLEM_KEY = "AZ_PROBLEM_KEY";
 
@@ -14,16 +15,22 @@ function onProblemsPage(){
 }
 
 function addBookmarkButton() {
-    console.log("Trigerring");
     if(!onProblemsPage() || document.getElementById("add-bookmark-button")) return;
+
+    // ROBUST FIX: Find the "Ask Doubt" button by its text content
+    // This prevents the code from breaking if the class name changes
+    const buttons = Array.from(document.querySelectorAll('button'));
+    const askDoubtButton = buttons.find(btn => btn.innerText.includes("Ask Doubt") || btn.innerText.includes("Doubt"));
+
+    if (!askDoubtButton) return;
 
     const bookmarkButton = document.createElement('img');
     bookmarkButton.id = "add-bookmark-button";
     bookmarkButton.src = bookmarkImgURL;
     bookmarkButton.style.height = "30px";
     bookmarkButton.style.width = "30px";
-
-    const askDoubtButton = document.getElementsByClassName("coding_ask_doubt_button__FjwXJ")[0];
+    bookmarkButton.style.cursor = "pointer";
+    bookmarkButton.style.marginLeft = "10px"; // Add spacing so it looks nice
 
     askDoubtButton.parentNode.insertAdjacentElement("afterend", bookmarkButton);
 
@@ -35,9 +42,18 @@ async function addNewBookmarkHandler() {
 
     const azProblemUrl = window.location.href;
     const uniqueId = extractUniqueId(azProblemUrl);
-    const problemName = document.getElementsByClassName("Header_resource_heading__cpRp1")[0].innerText;
+    
+    // ROBUST FIX: Get problem title from H1 tag instead of random class name
+    let problemName = "Unknown Problem";
+    const titleElement = document.querySelector('h1'); 
+    if (titleElement) {
+        problemName = titleElement.innerText;
+    }
 
-    if(currentBookmarks.some((bookmark) => bookmark.id === uniqueId)) return;
+    if(currentBookmarks.some((bookmark) => bookmark.id === uniqueId)) {
+        alert("Problem already bookmarked!");
+        return;
+    }
 
     const bookmarkObj = {
         id: uniqueId,
@@ -47,10 +63,12 @@ async function addNewBookmarkHandler() {
 
     const updatedBookmarks = [...currentBookmarks, bookmarkObj];
 
-    chrome.storage.sync.set({AZ_PROBLEM_KEY: updatedBookmarks}, () => {
+    chrome.storage.sync.set({[AZ_PROBLEM_KEY]: updatedBookmarks}, () => {
         console.log("Updated the bookmarks correctly to ", updatedBookmarks);
+        alert("Bookmark Saved!");
     })
 }
+
 function extractUniqueId(url) {
     const start = url.indexOf("problems/") + "problems/".length;
     const end = url.indexOf("?", start);
