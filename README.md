@@ -17,7 +17,7 @@ A custom Google Chrome extension designed to help students and developers bookma
 ## Installation & Setup
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/rahulpaul-07/Chrome-Extension-Problem-Tracker.git](https://github.com/rahulpaul-07/Chrome-Extension-Problem-Tracker.git)
+    git clone https://github.com/rahulpaul-07/Chrome-Extension-Problem-Tracker.git
     ```
 2.  **Open Chrome Extensions:**
     * Open Google Chrome and type `chrome://extensions/` in the address bar.
